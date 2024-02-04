@@ -138,23 +138,28 @@ app.post('/update',(req,res)=>{
 })
 
 
-app.post('/filter', (req,res)=>{
-    const selectFilter=req.body.filterby;
-    console.log(selectFilter);
+app.post('/filter', (req, res) => {
+  const selectFilter = req.body.filterby;
+  console.log(selectFilter);
 
-    if(selectFilter=="Age")
-    {
-        teachers.sort((a, b) => a.age - b.age);
-    }
-    if(selectFilter=="subjectTaught"){
-        teachers.sort((a, b) => a.subject_taught - b.subject_taught);
-    }
+  let filteredTeachers = [...teachers];  // Create a new array for filtered data
+  if(selectFilter=="Age")
+      {
+        filteredTeachers.sort((a, b) => a.age - b.age);
+      }
+  else if (selectFilter === "Age below 50") {
+      filteredTeachers = filteredTeachers.filter(teacher => teacher.age < 50);
+  } else if (selectFilter === "Age above 50") {
+      filteredTeachers = filteredTeachers.filter(teacher => teacher.age >= 50);
+  } else if (selectFilter === "subjectTaught") {
+      filteredTeachers.sort((a, b) => a.subject_taught - b.subject_taught);
+  }
 
-    res.render("home", {
-        data: teachers,
-        filterby: selectFilter
-    });
-})
+  res.render("home", {
+      data: filteredTeachers,
+      filterby: selectFilter
+  });
+});
 app.get('/avg',(req,res)=>{
   
 if(teachers.length===0)
