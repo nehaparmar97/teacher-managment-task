@@ -99,17 +99,16 @@ button[name="delete"] {
     <% } %>
     <br>
 
-    <form id="addteacher" action="/filter" method="post">
-        
-            <h3>Filter teacher</h3>
-            <label class="label">Filter by:</label>
-            <select id="filterby" name="filterby">
-                <option value="Age">Age</option>
-                <option value="subjectTaught">Subject Taught</option>
-            </select>
-            <button type="submit">Apply Filter</button>
-        
-       
+   <form id="addteacher" action="/filter" method="post">
+        <h3>Filter teacher</h3>
+        <label class="label">Filter by:</label>
+        <select id="filterby" name="filterby">
+            <option value="Age">Age </option>
+            <option value="Age below 50">Age below 50</option>
+            <option value="Age above 50">Age above 50</option>
+            <option value="subjectTaught">Subject Taught</option>
+        </select>
+        <button type="submit">Apply Filter</button>
     </form>
     
     <br>
