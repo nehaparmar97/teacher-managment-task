@@ -25,4 +25,4 @@ Technology
 
 Demo Link
 
-https://teacher-managment-task1.onrender.com/avg
+https://teacher-managment-task2.onrender.com/
