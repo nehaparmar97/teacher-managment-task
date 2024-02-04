@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Yuki",
+    "age": "25",
+    "dateOfBirth": "1999-12-06",
+    "subject_taught": "2"
+  },
+  {
+    "name": "Sophia Davis",
+    "age": "25",
+    "dateOfBirth": "1997-02-14",
+    "subject_taught": "1"
+  },
+  {
+    "name": "Alice Johnson",
+    "age": "28",
+    "dateOfBirth": "1994-08-22",
+    "subject_taught": "2"
+  },
+  {
+    "name": "Yashita Khandelwal",
+    "age": "23",
+    "dateOfBirth": "2001-01-23",
+    "subject_taught": "3"
+  },
+  {
+    "name": "Michael Brown",
+    "age": "40",
+    "dateOfBirth": "1982-07-18",
+    "subject_taught": "3"
+  },
+  {
+    "name": "Leena Nagwade",
+    "age": "29",
+    "dateOfBirth": "1992-04-01",
+    "subject_taught": "3"
+  },
+  {
+    "name": "Shivangi Gatheliya",
+    "age": "78",
+    "dateOfBirth": "1970-01-01",
+    "subject_taught": "3"
+  },
+  {
+    "name": "Kratika Patidar",
+    "age": "24",
+    "dateOfBirth": "20001-07-20",
+    "subject_taught": "4"
+  },
+  {
+    "name": "Bob Smith",
+    "age": "35",
+    "dateOfBirth": "1987-03-10",
+    "subject_taught": "4"
+  },
+  {
+    "name": "John Doe",
+    "age": "30",
+    "dateOfBirth": "1992-05-15",
+    "subject_taught": "5"
+  },
+  {
+    "name": "Eva Williams",
+    "age": "32",
+    "dateOfBirth": "1990-11-29",
+    "subject_taught": "6"
+  },
+  {
+    "name": "Neha Parmar",
+    "age": "21",
+    "dateOfBirth": "2001-07-01",
+    "subject_taught": "6"
+  },
+  {
+    "name": "dasd",
+    "age": "2",
+    "dateOfBirth": "2001-01-01",
+    "subject_taught": "2"
+  },
+  {
+    "name": "avish",
+    "age": "23",
+    "dateOfBirth": "2001-01-01",
+    "subject_taught": "2"
+  }
+]
