@@ -10,71 +10,7 @@
 </head>
 
 
-    <style> 
-    
-        h1 {
-    color: #052e5e;
-    text-align: center;
-
-
-    }
-    #addteacher {
-    background-color: #e0f7fa; /* Light blue background color */
-    padding: 5px;
-    border-radius: 4px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-#addteacher input {
-    margin-bottom: 5px;
-    padding: 4px;
-    font-size: 15px;
-    width: 18%;
-    height: 20px;
-}
-
-
-
-#addteacher button {
-    background-color: #0288d1; /* Blue button color */
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    height: 25px;
-    align-self: center;
-    margin-top: 5px;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    margin-left: 15px;
-}
-
-
-button[name="delete"] {
-    background-color: #e61010;
-}
-
-        table { 
-            font-family: arial, sans-serif; 
-            border-collapse: collapse; 
-            width: 100%; 
-        } 
-  
-        td, 
-        th { 
-            border: 1px solid #dddddd; 
-            text-align: left; 
-            padding: 8px; 
-        } 
-  
-        tr:nth-child(even) { 
-            background-color: #abecf9; 
-        } 
-    </style>  
-  
-<body> 
+    <body> 
     
   
     <form id="addteacher" action="/" method="post"> 
@@ -99,7 +35,8 @@ button[name="delete"] {
     <% } %>
     <br>
 
-   <form id="addteacher" action="/filter" method="post">
+  <div class="filteration">
+     <form id="addteacher" action="/filter" method="post">
         <h3>Filter teacher</h3>
         <label class="label">Filter by:</label>
         <select id="filterby" name="filterby">
@@ -110,6 +47,14 @@ button[name="delete"] {
         </select>
         <button type="submit">Apply Filter</button>
     </form>
+    <br>
+    <form id="addteacher" action="/minmax" method="post">
+        <h3>teacher in giveh age</h3>
+        <input type="number" name="minage" id="minage" placeholder="enter min age">
+        <input type="number" name="maxage" id="maxage" placeholder="enter max age">
+        <button type="submit">apply</button>
+      </form>
+    </div>
     
     <br>
     <form id="addteacher" action="/avg" method="get">
