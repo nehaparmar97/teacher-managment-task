@@ -25,4 +25,4 @@ Technology
 
 Demo Link
 
-https://teacher-managment-task4.onrender.com/
+https://teacher-management-task.onrender.com/
