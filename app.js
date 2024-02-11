@@ -184,7 +184,18 @@ else
       }
     });
   }
+app.post('/minmax',(req,res)=>{
+  const searchmin=req.body.minage;
+  const searchmax=req.body.maxage;
+  const filteredTeachers = teachers.filter(teacher => {
+    return teacher.age >= searchmin && teacher.age <= searchmax;
+});
 
+  res.render("home", {
+      data: filteredTeachers,
+      //showAlert: showAlert
+  });
+})
 // Create an HTTP server
 const server = http.createServer(app);
 
